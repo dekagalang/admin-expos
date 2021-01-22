@@ -1,7 +1,15 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import setupAxios from '../config/axiosConfig'
+import axios from 'axios'
 
-const url = 'https://expos-compro.herokuapp.com/'
+setupAxios(axios)
+
+axios.get('/email')
+.then(response => { console.log(response) })
+.catch(err => {
+  console.log(err)
+});
 
 export default function Home() {
   return (
