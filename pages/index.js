@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 
+const url = 'https://expos-compro.herokuapp.com/'
+
 export default function Home() {
   return (
     <div className={styles.container}>
